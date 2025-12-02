@@ -32,55 +32,72 @@
             txtUsuario = new TextBox();
             label1 = new Label();
             txtPassword = new TextBox();
+            btnIngresar = new Button();
+            btnCancelar = new Button();
             SuspendLayout();
             // 
             // Userlb
             // 
             Userlb.AutoSize = true;
-            Userlb.Location = new Point(85, 56);
-            Userlb.Margin = new Padding(4, 0, 4, 0);
+            Userlb.Location = new Point(68, 45);
             Userlb.Name = "Userlb";
-            Userlb.Size = new Size(72, 25);
+            Userlb.Size = new Size(59, 20);
             Userlb.TabIndex = 0;
             Userlb.Text = "Usuario";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(91, 104);
-            txtUsuario.Margin = new Padding(4, 4, 4, 4);
+            txtUsuario.Location = new Point(73, 83);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(155, 31);
+            txtUsuario.Size = new Size(125, 27);
             txtUsuario.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(90, 164);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(72, 131);
             label1.Name = "label1";
-            label1.Size = new Size(101, 25);
+            label1.Size = new Size(83, 20);
             label1.TabIndex = 2;
             label1.Text = "Contraseña";
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(95, 212);
-            txtPassword.Margin = new Padding(4, 4, 4, 4);
+            txtPassword.Location = new Point(76, 170);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(155, 31);
+            txtPassword.Size = new Size(125, 27);
             txtPassword.TabIndex = 3;
             txtPassword.UseSystemPasswordChar = true;
             // 
+            // btnIngresar
+            // 
+            btnIngresar.Location = new Point(70, 279);
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.Size = new Size(94, 29);
+            btnIngresar.TabIndex = 4;
+            btnIngresar.Text = "Validar";
+            btnIngresar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(261, 279);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.TabIndex = 5;
+            btnCancelar.Text = "Cerrar App";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnIngresar);
             Controls.Add(txtPassword);
             Controls.Add(label1);
             Controls.Add(txtUsuario);
             Controls.Add(Userlb);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "FrmLogin";
             Text = "FrmLogin";
             ResumeLayout(false);
@@ -93,5 +110,7 @@
         private TextBox txtUsuario;
         private Label label1;
         private TextBox txtPassword;
+        private Button btnIngresar;
+        private Button btnCancelar;
     }
 }
