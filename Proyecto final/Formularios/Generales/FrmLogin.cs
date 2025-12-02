@@ -16,5 +16,10 @@ namespace Proyecto_final.Formularios.Generales
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
