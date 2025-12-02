@@ -28,12 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmLogin";
+            Userlb = new Label();
+            txtUsuario = new TextBox();
+            label1 = new Label();
+            txtPassword = new TextBox();
+            btnIngresar = new Button();
+            SuspendLayout();
+            // 
+            // Userlb
+            // 
+            Userlb.AutoSize = true;
+            Userlb.Location = new Point(68, 45);
+            Userlb.Name = "Userlb";
+            Userlb.Size = new Size(59, 20);
+            Userlb.TabIndex = 0;
+            Userlb.Text = "Usuario";
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(73, 83);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(125, 27);
+            txtUsuario.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(72, 131);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Contraseña";
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(76, 170);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(125, 27);
+            txtPassword.TabIndex = 3;
+            txtPassword.UseSystemPasswordChar = true;
+            // 
+            // btnIngresar
+            // 
+            btnIngresar.Location = new Point(58, 265);
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.Size = new Size(94, 29);
+            btnIngresar.TabIndex = 4;
+            btnIngresar.Text = "button1";
+            btnIngresar.UseVisualStyleBackColor = true;
+            // 
+            // FrmLogin
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnIngresar);
+            Controls.Add(txtPassword);
+            Controls.Add(label1);
+            Controls.Add(txtUsuario);
+            Controls.Add(Userlb);
+            Name = "FrmLogin";
+            Text = "FrmLogin";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label Userlb;
+        private TextBox txtUsuario;
+        private Label label1;
+        private TextBox txtPassword;
+        private Button btnIngresar;
     }
 }
