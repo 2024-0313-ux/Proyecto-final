@@ -28,12 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmRegistrarPago";
+            cboSocio = new ComboBox();
+            label1 = new Label();
+            cboPrestamo = new ComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            txtMontoPago = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
+            label4 = new Label();
+            btnGuardarPago = new Button();
+            btnCancelar = new Button();
+            SuspendLayout();
+            // 
+            // cboSocio
+            // 
+            cboSocio.FormattingEnabled = true;
+            cboSocio.Location = new Point(67, 55);
+            cboSocio.Name = "cboSocio";
+            cboSocio.Size = new Size(151, 28);
+            cboSocio.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(67, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(126, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Seleccionar Socio";
+            // 
+            // cboPrestamo
+            // 
+            cboPrestamo.FormattingEnabled = true;
+            cboPrestamo.Location = new Point(66, 128);
+            cboPrestamo.Name = "cboPrestamo";
+            cboPrestamo.Size = new Size(151, 28);
+            cboPrestamo.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(66, 105);
+            label2.Name = "label2";
+            label2.Size = new Size(152, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Seleccionar prestamo";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(68, 171);
+            label3.Name = "label3";
+            label3.Size = new Size(108, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Monto a pagar";
+            // 
+            // txtMontoPago
+            // 
+            txtMontoPago.Location = new Point(68, 194);
+            txtMontoPago.Name = "txtMontoPago";
+            txtMontoPago.Size = new Size(125, 27);
+            txtMontoPago.TabIndex = 5;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(67, 255);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 6;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(68, 232);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Fecha de el pago";
+            // 
+            // btnGuardarPago
+            // 
+            btnGuardarPago.Location = new Point(70, 305);
+            btnGuardarPago.Name = "btnGuardarPago";
+            btnGuardarPago.Size = new Size(94, 29);
+            btnGuardarPago.TabIndex = 8;
+            btnGuardarPago.Text = "Pagar";
+            btnGuardarPago.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(193, 305);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.TabIndex = 9;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // FrmRegistrarPago
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardarPago);
+            Controls.Add(label4);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(txtMontoPago);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(cboPrestamo);
+            Controls.Add(label1);
+            Controls.Add(cboSocio);
+            Name = "FrmRegistrarPago";
+            Text = "FrmRegistrarPago";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private ComboBox cboSocio;
+        private Label label1;
+        private ComboBox cboPrestamo;
+        private Label label2;
+        private Label label3;
+        private TextBox txtMontoPago;
+        private DateTimePicker dateTimePicker1;
+        private Label label4;
+        private Button btnGuardarPago;
+        private Button btnCancelar;
     }
 }
