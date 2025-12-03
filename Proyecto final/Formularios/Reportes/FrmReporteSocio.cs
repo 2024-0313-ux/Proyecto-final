@@ -16,5 +16,10 @@ namespace Proyecto_final.Formularios.Reportes
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
