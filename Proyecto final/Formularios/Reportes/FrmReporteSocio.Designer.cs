@@ -45,7 +45,6 @@
             cboSocio.Name = "cboSocio";
             cboSocio.Size = new Size(146, 28);
             cboSocio.TabIndex = 0;
-            cboSocio.SelectedIndexChanged += cboSocio_SelectedIndexChanged;
             // 
             // btnGenerar
             // 
@@ -56,7 +55,6 @@
             btnGenerar.TabIndex = 1;
             btnGenerar.Text = "Generar";
             btnGenerar.UseVisualStyleBackColor = true;
-            btnGenerar.Click += this.btnGenerar_Click;
             // 
             // dgvReporte
             // 
@@ -67,8 +65,6 @@
             dgvReporte.RowHeadersWidth = 62;
             dgvReporte.Size = new Size(288, 180);
             dgvReporte.TabIndex = 2;
-            dgvReporte.CellContentClick += this.dgvReporte_CellContentClick;
-            // 
             // btnExportar
             // 
             btnExportar.Location = new Point(36, 291);
@@ -78,8 +74,6 @@
             btnExportar.TabIndex = 3;
             btnExportar.Text = "Exportar";
             btnExportar.UseVisualStyleBackColor = true;
-            btnExportar.Click += button2_Click;
-            // 
             // btnCerrar
             // 
             btnCerrar.Location = new Point(231, 291);
@@ -89,8 +83,6 @@
             btnCerrar.TabIndex = 4;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
-            btnCerrar.Click += this.btnCerrar_Click;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -99,8 +91,6 @@
             label1.Size = new Size(143, 20);
             label1.TabIndex = 5;
             label1.Text = "Selelccione un socio";
-            label1.Click += this.label1_Click;
-            // 
             // FrmReporteSocio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
