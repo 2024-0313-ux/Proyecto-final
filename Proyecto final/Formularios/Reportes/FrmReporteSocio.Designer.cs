@@ -28,82 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            button1 = new Button();
-            dataGridView1 = new DataGridView();
-            button2 = new Button();
-            button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            cboSocio = new ComboBox();
+            btnGenerar = new Button();
+            dgvReporte = new DataGridView();
+            btnExportar = new Button();
+            btnCerrar = new Button();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvReporte).BeginInit();
             SuspendLayout();
             // 
-            // comboBox1
+            // cboSocio
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(49, 73);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
-            comboBox1.TabIndex = 0;
-            comboBox1.Text = "Socio";
+            cboSocio.FormattingEnabled = true;
+            cboSocio.Location = new Point(48, 47);
+            cboSocio.Margin = new Padding(2);
+            cboSocio.Name = "cboSocio";
+            cboSocio.Size = new Size(146, 28);
+            cboSocio.TabIndex = 0;
+            cboSocio.SelectedIndexChanged += cboSocio_SelectedIndexChanged;
             // 
-            // button1
+            // btnGenerar
             // 
-            button1.Location = new Point(56, 145);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 1;
-            button1.Text = "Generar";
-            button1.UseVisualStyleBackColor = true;
+            btnGenerar.Location = new Point(45, 79);
+            btnGenerar.Margin = new Padding(2);
+            btnGenerar.Name = "btnGenerar";
+            btnGenerar.Size = new Size(90, 27);
+            btnGenerar.TabIndex = 1;
+            btnGenerar.Text = "Generar";
+            btnGenerar.UseVisualStyleBackColor = true;
+            btnGenerar.Click += this.btnGenerar_Click;
             // 
-            // dataGridView1
+            // dgvReporte
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(68, 207);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(360, 225);
-            dataGridView1.TabIndex = 2;
+            dgvReporte.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReporte.Location = new Point(48, 110);
+            dgvReporte.Margin = new Padding(2);
+            dgvReporte.Name = "dgvReporte";
+            dgvReporte.RowHeadersWidth = 62;
+            dgvReporte.Size = new Size(288, 180);
+            dgvReporte.TabIndex = 2;
+            dgvReporte.CellContentClick += this.dgvReporte_CellContentClick;
             // 
-            // button2
+            // btnExportar
             // 
-            button2.Location = new Point(56, 445);
-            button2.Name = "button2";
-            button2.Size = new Size(145, 34);
-            button2.TabIndex = 3;
-            button2.Text = "Exportar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnExportar.Location = new Point(36, 291);
+            btnExportar.Margin = new Padding(2);
+            btnExportar.Name = "btnExportar";
+            btnExportar.Size = new Size(116, 27);
+            btnExportar.TabIndex = 3;
+            btnExportar.Text = "Exportar";
+            btnExportar.UseVisualStyleBackColor = true;
+            btnExportar.Click += button2_Click;
             // 
-            // button3
+            // btnCerrar
             // 
-            button3.Location = new Point(300, 445);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 4;
-            button3.Text = "Cerrar";
-            button3.UseVisualStyleBackColor = true;
+            btnCerrar.Location = new Point(231, 291);
+            btnCerrar.Margin = new Padding(2);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(90, 27);
+            btnCerrar.TabIndex = 4;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += this.btnCerrar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(48, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(143, 20);
+            label1.TabIndex = 5;
+            label1.Text = "Selelccione un socio";
+            label1.Click += this.label1_Click;
             // 
             // FrmReporteSocio
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 491);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(dataGridView1);
-            Controls.Add(button1);
-            Controls.Add(comboBox1);
+            ClientSize = new Size(640, 393);
+            Controls.Add(label1);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnExportar);
+            Controls.Add(dgvReporte);
+            Controls.Add(btnGenerar);
+            Controls.Add(cboSocio);
+            Margin = new Padding(2);
             Name = "FrmReporteSocio";
             Text = "FrmReporteSocio";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvReporte).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ComboBox comboBox1;
-        private Button button1;
-        private DataGridView dataGridView1;
-        private Button button2;
-        private Button button3;
+        private ComboBox cboSocio;
+        private Button btnGenerar;
+        private DataGridView dgvReporte;
+        private Button btnExportar;
+        private Button btnCerrar;
+        private Label label1;
     }
 }
