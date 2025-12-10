@@ -1,4 +1,7 @@
-﻿namespace Proyecto_final
+﻿using System.Data.SqlClient;
+using Proyecto_final.Clases;
+
+namespace Proyecto_final
 {
     public partial class Form1 : Form
     {
