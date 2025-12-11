@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            btmSocios = new Button();
+            btnSocios = new Button();
             btnAportes = new Button();
             btnPrestamos = new Button();
             btnPagos = new Button();
             btnReportes = new Button();
             btnUsuarios = new Button();
             btnSalir = new Button();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -47,18 +49,18 @@
             label1.TabIndex = 0;
             label1.Text = "Sistema Cooperativa";
             // 
-            // btmSocios
+            // btnSocios
             // 
-            btmSocios.Location = new Point(32, 93);
-            btmSocios.Name = "btmSocios";
-            btmSocios.Size = new Size(94, 29);
-            btmSocios.TabIndex = 1;
-            btmSocios.Text = "Socios";
-            btmSocios.UseVisualStyleBackColor = true;
+            btnSocios.Location = new Point(13, 11);
+            btnSocios.Name = "btnSocios";
+            btnSocios.Size = new Size(94, 29);
+            btnSocios.TabIndex = 1;
+            btnSocios.Text = "Socios";
+            btnSocios.UseVisualStyleBackColor = true;
             // 
             // btnAportes
             // 
-            btnAportes.Location = new Point(32, 128);
+            btnAportes.Location = new Point(113, 11);
             btnAportes.Name = "btnAportes";
             btnAportes.Size = new Size(94, 29);
             btnAportes.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // btnPrestamos
             // 
-            btnPrestamos.Location = new Point(32, 163);
+            btnPrestamos.Location = new Point(213, 11);
             btnPrestamos.Name = "btnPrestamos";
             btnPrestamos.Size = new Size(94, 29);
             btnPrestamos.TabIndex = 3;
@@ -76,7 +78,7 @@
             // 
             // btnPagos
             // 
-            btnPagos.Location = new Point(32, 198);
+            btnPagos.Location = new Point(313, 11);
             btnPagos.Name = "btnPagos";
             btnPagos.Size = new Size(98, 29);
             btnPagos.TabIndex = 4;
@@ -85,7 +87,7 @@
             // 
             // btnReportes
             // 
-            btnReportes.Location = new Point(32, 233);
+            btnReportes.Location = new Point(417, 11);
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(94, 29);
             btnReportes.TabIndex = 5;
@@ -94,7 +96,7 @@
             // 
             // btnUsuarios
             // 
-            btnUsuarios.Location = new Point(32, 268);
+            btnUsuarios.Location = new Point(517, 11);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(94, 29);
             btnUsuarios.TabIndex = 6;
@@ -103,28 +105,38 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(314, 339);
+            btnSalir.Location = new Point(617, 11);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(144, 29);
             btnSalir.TabIndex = 7;
             btnSalir.Text = "Cerrar Sesión";
             btnSalir.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnSocios);
+            panel1.Controls.Add(btnSalir);
+            panel1.Controls.Add(btnAportes);
+            panel1.Controls.Add(btnUsuarios);
+            panel1.Controls.Add(btnPrestamos);
+            panel1.Controls.Add(btnReportes);
+            panel1.Controls.Add(btnPagos);
+            panel1.Location = new Point(-1, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(798, 52);
+            panel1.TabIndex = 9;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSalir);
-            Controls.Add(btnUsuarios);
-            Controls.Add(btnReportes);
-            Controls.Add(btnPagos);
-            Controls.Add(btnPrestamos);
-            Controls.Add(btnAportes);
-            Controls.Add(btmSocios);
+            Controls.Add(panel1);
             Controls.Add(label1);
+            IsMdiContainer = true;
             Name = "FrmMenuPrincipal";
             Text = "FrmMenuPrincipal";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,12 +144,13 @@
         #endregion
 
         private Label label1;
-        private Button btmSocios;
+        private Button btnSocios;
         private Button btnAportes;
         private Button btnPrestamos;
         private Button btnPagos;
         private Button btnReportes;
         private Button btnUsuarios;
         private Button btnSalir;
+        private Panel panel1;
     }
 }

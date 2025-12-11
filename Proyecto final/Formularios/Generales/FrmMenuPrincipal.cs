@@ -1,9 +1,5 @@
-﻿using Proyecto_final.Formularios.Socios;
-using Proyecto_final.Formularios.Prestamos;
-using Proyecto_final.Formularios.Aportes;
-using Proyecto_final.Formularios.Pagos;
-using Proyecto_final.Formularios.Usuarios;
-using Proyecto_final.Formularios.Reportes;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Proyecto_final.Formularios.Generales
 {
@@ -12,20 +8,37 @@ namespace Proyecto_final.Formularios.Generales
         public FrmMenuPrincipal()
         {
             InitializeComponent();
-            IsMdiContainer = true;
+
+            // Habilitar MDI
+            this.IsMdiContainer = true;
+
+            // Centrar el formulario principal
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // Eventos de los botones
+            btnSocios.Click += btnSocios_Click;
+            btnAportes.Click += btnAportes_Click;
+            btnPrestamos.Click += btnPrestamos_Click;
+            btnPagos.Click += btnPagos_Click;
+            btnReportes.Click += btnReportes_Click;
+            btnUsuarios.Click += BtnUsuarios_Click;
+            btnSalir.Click += btnSalir_Click;
         }
 
+        /// Función general para abrir formularios MDI sin duplicarlos
         private Form AbrirFormulario(Type formType)
         {
-            foreach (Form form in this.MdiChildren)
+            // Si ya está abierto, activarlo
+            foreach (Form f in this.MdiChildren)
             {
-                if (form.GetType() == formType)
+                if (f.GetType() == formType)
                 {
-                    form.Activate();
-                    return form;
+                    f.Activate();
+                    return f;
                 }
             }
 
+            // Si no está abierto, crearlo
             Form nuevo = (Form)Activator.CreateInstance(formType);
             nuevo.MdiParent = this;
             nuevo.StartPosition = FormStartPosition.CenterScreen;
@@ -33,44 +46,43 @@ namespace Proyecto_final.Formularios.Generales
             return nuevo;
         }
 
-        private void sociosToolStripMenuItem_Click(object sender, EventArgs e)
+        // ---- BOTONES ----
+
+        private void btnSocios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmSocios));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Socios.FrmSocios));
         }
 
-        private void aportesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAportes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmRegistrarAporte));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Aportes.FrmRegistrarAporte));
         }
 
-        private void historialAportesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmHistorialAportes));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Prestamos.FrmPrestamos));
         }
 
-        private void prestamosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPagos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmPrestamos));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Pagos.FrmRegistrarPago));
         }
 
-        private void pagosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmRegistrarPago));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Reportes.FrmReporteGlobal));
         }
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BtnUsuarios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmUsuarios));
+            AbrirFormulario(typeof(Proyecto_final.Formularios.Usuarios.FrmUsuarios));
         }
 
-        private void reporteSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        // --- CERRAR SESIÓN ---
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(typeof(FrmReporteSocio));
-        }
-
-        private void reporteGlobalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(typeof(FrmReporteGlobal));
+            this.Hide();
+            new FrmLogin().Show();
         }
     }
 }
