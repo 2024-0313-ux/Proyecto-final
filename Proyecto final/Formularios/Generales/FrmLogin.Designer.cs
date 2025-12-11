@@ -71,16 +71,17 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(70, 279);
+            btnIngresar.Location = new Point(68, 228);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(94, 29);
             btnIngresar.TabIndex = 4;
             btnIngresar.Text = "Validar";
             btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.Click += btnIngresar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(261, 279);
+            btnCancelar.Location = new Point(168, 228);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 29);
             btnCancelar.TabIndex = 5;
