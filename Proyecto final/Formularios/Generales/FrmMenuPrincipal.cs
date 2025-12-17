@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_final.Formularios.Aportes;
+using System;
 using System.Windows.Forms;
 
 namespace Proyecto_final.Formularios.Generales
@@ -78,11 +79,18 @@ namespace Proyecto_final.Formularios.Generales
             AbrirFormulario(typeof(Proyecto_final.Formularios.Usuarios.FrmUsuarios));
         }
 
+        private void btnHistorialAporte_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(typeof(FrmHistorialAportes));
+        }
+
         // --- CERRAR SESIÓN ---
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
             new FrmLogin().Show();
         }
+
+        
     }
 }

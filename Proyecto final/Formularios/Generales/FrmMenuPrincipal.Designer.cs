@@ -37,6 +37,7 @@
             btnUsuarios = new Button();
             btnSalir = new Button();
             panel1 = new Panel();
+            btnHistorialAporte = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -114,6 +115,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnHistorialAporte);
             panel1.Controls.Add(btnSocios);
             panel1.Controls.Add(btnSalir);
             panel1.Controls.Add(btnAportes);
@@ -121,10 +123,20 @@
             panel1.Controls.Add(btnPrestamos);
             panel1.Controls.Add(btnReportes);
             panel1.Controls.Add(btnPagos);
-            panel1.Location = new Point(-1, 1);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(798, 52);
+            panel1.Size = new Size(800, 76);
             panel1.TabIndex = 9;
+            // 
+            // btnHistorialAporte
+            // 
+            btnHistorialAporte.Location = new Point(3, 46);
+            btnHistorialAporte.Name = "btnHistorialAporte";
+            btnHistorialAporte.Size = new Size(144, 29);
+            btnHistorialAporte.TabIndex = 8;
+            btnHistorialAporte.Text = "Aporte Historial";
+            btnHistorialAporte.UseVisualStyleBackColor = true;
+            btnHistorialAporte.Click += btnHistorialAporte_Click;
             // 
             // FrmMenuPrincipal
             // 
@@ -152,5 +164,6 @@
         private Button btnUsuarios;
         private Button btnSalir;
         private Panel panel1;
+        private Button btnHistorialAporte;
     }
 }

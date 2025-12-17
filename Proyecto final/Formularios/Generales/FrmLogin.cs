@@ -59,11 +59,9 @@ namespace Proyecto_final.Formularios.Generales
             }
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Usuarios.FrmUsuarioDetalle frm = new Usuarios.FrmUsuarioDetalle();
-            frm.ShowDialog();
-        }
 
+        }
     }
 }

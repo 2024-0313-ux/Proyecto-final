@@ -32,8 +32,6 @@
             cboSocio = new ComboBox();
             label2 = new Label();
             txtMonto = new TextBox();
-            label3 = new Label();
-            dtpFecha = new DateTimePicker();
             Guardar = new Button();
             btnCancelar = new Button();
             SuspendLayout();
@@ -71,39 +69,25 @@
             txtMonto.Size = new Size(125, 27);
             txtMonto.TabIndex = 3;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(59, 180);
-            label3.Name = "label3";
-            label3.Size = new Size(47, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Fecha";
-            // 
-            // dtpFecha
-            // 
-            dtpFecha.Location = new Point(59, 203);
-            dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(295, 27);
-            dtpFecha.TabIndex = 5;
-            // 
             // Guardar
             // 
-            Guardar.Location = new Point(60, 263);
+            Guardar.Location = new Point(59, 204);
             Guardar.Name = "Guardar";
             Guardar.Size = new Size(94, 29);
             Guardar.TabIndex = 6;
             Guardar.Text = "Guardar";
             Guardar.UseVisualStyleBackColor = true;
+            Guardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(218, 263);
+            btnCancelar.Location = new Point(183, 204);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 29);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // FrmRegistrarAporte
             // 
@@ -112,8 +96,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnCancelar);
             Controls.Add(Guardar);
-            Controls.Add(dtpFecha);
-            Controls.Add(label3);
             Controls.Add(txtMonto);
             Controls.Add(label2);
             Controls.Add(cboSocio);
@@ -130,8 +112,6 @@
         private ComboBox cboSocio;
         private Label label2;
         private TextBox txtMonto;
-        private Label label3;
-        private DateTimePicker dtpFecha;
         private Button Guardar;
         private Button btnCancelar;
     }
