@@ -33,6 +33,8 @@
             dgvPrestamos = new DataGridView();
             btnNuevo = new Button();
             btnVerDetalle = new Button();
+            btnAprovar = new Button();
+            btnRechazar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvPrestamos).BeginInit();
             SuspendLayout();
             // 
@@ -51,6 +53,7 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // dgvPrestamos
             // 
@@ -69,21 +72,45 @@
             btnNuevo.TabIndex = 3;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // btnVerDetalle
             // 
-            btnVerDetalle.Location = new Point(255, 326);
+            btnVerDetalle.Location = new Point(344, 326);
             btnVerDetalle.Name = "btnVerDetalle";
             btnVerDetalle.Size = new Size(94, 29);
             btnVerDetalle.TabIndex = 4;
             btnVerDetalle.Text = "Ver detalles";
             btnVerDetalle.UseVisualStyleBackColor = true;
+            btnVerDetalle.Click += btnVerDetalle_Click;
+            // 
+            // btnAprovar
+            // 
+            btnAprovar.Location = new Point(149, 326);
+            btnAprovar.Name = "btnAprovar";
+            btnAprovar.Size = new Size(94, 29);
+            btnAprovar.TabIndex = 5;
+            btnAprovar.Text = "Aprovar";
+            btnAprovar.UseVisualStyleBackColor = true;
+            btnAprovar.Click += btnAprobar_Click;
+            // 
+            // btnRechazar
+            // 
+            btnRechazar.Location = new Point(244, 326);
+            btnRechazar.Name = "btnRechazar";
+            btnRechazar.Size = new Size(94, 29);
+            btnRechazar.TabIndex = 6;
+            btnRechazar.Text = "Rechazar";
+            btnRechazar.UseVisualStyleBackColor = true;
+            btnRechazar.Click += btnRechazar_Click;
             // 
             // FrmPrestamos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRechazar);
+            Controls.Add(btnAprovar);
             Controls.Add(btnVerDetalle);
             Controls.Add(btnNuevo);
             Controls.Add(dgvPrestamos);
@@ -103,5 +130,7 @@
         private DataGridView dgvPrestamos;
         private Button btnNuevo;
         private Button btnVerDetalle;
+        private Button btnAprovar;
+        private Button btnRechazar;
     }
 }

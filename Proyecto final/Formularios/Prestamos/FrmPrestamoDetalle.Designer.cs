@@ -79,6 +79,7 @@
             btnPago.TabIndex = 3;
             btnPago.Text = "Registrar pago";
             btnPago.UseVisualStyleBackColor = true;
+            btnPago.Click += btnRegistrarPago_Click;
             // 
             // Label24
             // 
@@ -178,6 +179,7 @@
             Controls.Add(label1);
             Name = "FrmPrestamoDetalle";
             Text = "FrmPrestamoDetalle";
+            Load += FrmPrestamoDetalle_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPagos).EndInit();
             ResumeLayout(false);
             PerformLayout();

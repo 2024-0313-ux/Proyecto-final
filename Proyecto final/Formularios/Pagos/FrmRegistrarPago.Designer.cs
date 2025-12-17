@@ -1,4 +1,5 @@
-﻿namespace Proyecto_final.Formularios.Pagos
+﻿
+namespace Proyecto_final.Formularios.Pagos
 {
     partial class FrmRegistrarPago
     {
@@ -33,8 +34,8 @@
             cboPrestamo = new ComboBox();
             label2 = new Label();
             label3 = new Label();
-            txtMontoPago = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            txtMonto = new TextBox();
+            dtpPago = new DateTimePicker();
             label4 = new Label();
             btnGuardarPago = new Button();
             btnCancelar = new Button();
@@ -83,19 +84,19 @@
             label3.TabIndex = 4;
             label3.Text = "Monto a pagar";
             // 
-            // txtMontoPago
+            // txtMonto
             // 
-            txtMontoPago.Location = new Point(68, 194);
-            txtMontoPago.Name = "txtMontoPago";
-            txtMontoPago.Size = new Size(125, 27);
-            txtMontoPago.TabIndex = 5;
+            txtMonto.Location = new Point(68, 194);
+            txtMonto.Name = "txtMonto";
+            txtMonto.Size = new Size(125, 27);
+            txtMonto.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // dtpPago
             // 
-            dateTimePicker1.Location = new Point(67, 255);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 6;
+            dtpPago.Location = new Point(67, 255);
+            dtpPago.Name = "dtpPago";
+            dtpPago.Size = new Size(250, 27);
+            dtpPago.TabIndex = 6;
             // 
             // label4
             // 
@@ -132,8 +133,8 @@
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardarPago);
             Controls.Add(label4);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(txtMontoPago);
+            Controls.Add(dtpPago);
+            Controls.Add(txtMonto);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(cboPrestamo);
@@ -144,7 +145,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
         #endregion
 
         private ComboBox cboSocio;
@@ -152,8 +152,8 @@
         private ComboBox cboPrestamo;
         private Label label2;
         private Label label3;
-        private TextBox txtMontoPago;
-        private DateTimePicker dateTimePicker1;
+        private TextBox txtMonto;
+        private DateTimePicker dtpPago;
         private Label label4;
         private Button btnGuardarPago;
         private Button btnCancelar;

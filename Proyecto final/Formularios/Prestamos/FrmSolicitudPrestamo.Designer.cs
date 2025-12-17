@@ -33,7 +33,7 @@
             cboSocio = new ComboBox();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtTasa = new TextBox();
             txtPlazo = new TextBox();
             label4 = new Label();
             btnGuardar = new Button();
@@ -84,12 +84,12 @@
             label3.TabIndex = 4;
             label3.Text = "Tasa de interes(%)";
             // 
-            // textBox1
+            // txtTasa
             // 
-            textBox1.Location = new Point(45, 216);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 5;
+            txtTasa.Location = new Point(45, 216);
+            txtTasa.Name = "txtTasa";
+            txtTasa.Size = new Size(125, 27);
+            txtTasa.TabIndex = 5;
             // 
             // txtPlazo
             // 
@@ -115,6 +115,7 @@
             btnGuardar.TabIndex = 8;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
@@ -124,6 +125,7 @@
             btnCancelar.TabIndex = 9;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // label5
             // 
@@ -153,7 +155,7 @@
             Controls.Add(btnGuardar);
             Controls.Add(label4);
             Controls.Add(txtPlazo);
-            Controls.Add(textBox1);
+            Controls.Add(txtTasa);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(cboSocio);
@@ -172,7 +174,7 @@
         private ComboBox cboSocio;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtTasa;
         private TextBox txtPlazo;
         private Label label4;
         private Button btnGuardar;
