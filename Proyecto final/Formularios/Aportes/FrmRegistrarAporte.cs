@@ -16,5 +16,15 @@ namespace Proyecto_final.Formularios.Aportes
         {
             InitializeComponent();
         }
+
+        private void FrmRegistrarAporte_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
