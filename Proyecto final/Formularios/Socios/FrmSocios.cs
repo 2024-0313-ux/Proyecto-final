@@ -17,5 +17,10 @@ namespace Proyecto_final.Formularios.Socios
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
