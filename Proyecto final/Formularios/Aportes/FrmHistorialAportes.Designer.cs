@@ -62,6 +62,7 @@
             btnMostrar.TabIndex = 2;
             btnMostrar.Text = "Mostrar";
             btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.Click += btnBuscar_Click;
             // 
             // dgvHistorial
             // 

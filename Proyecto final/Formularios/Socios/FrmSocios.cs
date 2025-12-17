@@ -66,16 +66,6 @@ namespace Proyecto_final.Formularios.Socios
         {
             CargarSocios(txtBuscar.Text.Trim());
         }
-
-        // ================================
-        // NUEVO SOCIO
-        // ================================
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            FrmSocioDetalle frm = new FrmSocioDetalle();
-            frm.ShowDialog();
-            CargarSocios();
-        }
         // ================================
         // EDITAR SOCIO
         // ================================
@@ -136,7 +126,14 @@ namespace Proyecto_final.Formularios.Socios
             CargarSocios();
         }
 
-      
-        
+        // ================================
+        // NUEVO SOCIO
+        // ================================     
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            FrmSocioDetalle frm = new FrmSocioDetalle();
+            frm.ShowDialog();
+            CargarSocios();
+        }
     }
 }
