@@ -135,5 +135,8 @@ namespace Proyecto_final.Formularios.Socios
 
             CargarSocios();
         }
+
+      
+        
     }
 }

@@ -41,24 +41,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(42, 38);
+            label1.Location = new Point(52, 48);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(52, 20);
+            label1.Size = new Size(63, 25);
             label1.TabIndex = 0;
             label1.Text = "Buscar";
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(43, 61);
+            txtBuscar.Location = new Point(54, 76);
+            txtBuscar.Margin = new Padding(4);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(125, 27);
+            txtBuscar.Size = new Size(155, 31);
             txtBuscar.TabIndex = 1;
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(43, 101);
+            btnBuscar.Location = new Point(54, 126);
+            btnBuscar.Margin = new Padding(4);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 29);
+            btnBuscar.Size = new Size(118, 36);
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -66,26 +69,30 @@
             // dgvSocios
             // 
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSocios.Location = new Point(43, 136);
+            dgvSocios.Location = new Point(54, 170);
+            dgvSocios.Margin = new Padding(4);
             dgvSocios.Name = "dgvSocios";
             dgvSocios.RowHeadersWidth = 51;
-            dgvSocios.Size = new Size(300, 188);
+            dgvSocios.Size = new Size(375, 235);
             dgvSocios.TabIndex = 3;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(41, 343);
+            btnAgregar.Location = new Point(51, 429);
+            btnAgregar.Margin = new Padding(4);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(94, 29);
+            btnAgregar.Size = new Size(118, 36);
             btnAgregar.TabIndex = 4;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(141, 343);
+            btnEditar.Location = new Point(176, 429);
+            btnEditar.Margin = new Padding(4);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(94, 29);
+            btnEditar.Size = new Size(118, 36);
             btnEditar.TabIndex = 5;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -93,9 +100,10 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(241, 343);
+            btnEliminar.Location = new Point(301, 429);
+            btnEliminar.Margin = new Padding(4);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(118, 36);
             btnEliminar.TabIndex = 6;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -103,9 +111,9 @@
             // 
             // FrmSocios
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(btnEliminar);
             Controls.Add(btnEditar);
             Controls.Add(btnAgregar);
@@ -113,6 +121,7 @@
             Controls.Add(btnBuscar);
             Controls.Add(txtBuscar);
             Controls.Add(label1);
+            Margin = new Padding(4);
             Name = "FrmSocios";
             Text = "FrmSocios";
             ((System.ComponentModel.ISupportInitialize)dgvSocios).EndInit();
