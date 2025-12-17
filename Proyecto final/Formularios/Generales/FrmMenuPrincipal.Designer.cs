@@ -326,7 +326,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private Label label1;
         private Panel panel1;
     }
 }
