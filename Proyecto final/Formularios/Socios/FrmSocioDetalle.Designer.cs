@@ -34,12 +34,13 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            txtDirección = new TextBox();
-            txtCédula = new TextBox();
+            txtDireccion = new TextBox();
+            txtCedula = new TextBox();
             txtTelefono = new TextBox();
             txtCorreo = new TextBox();
             btnGuardar = new Button();
             txtCancelar = new Button();
+            txtId = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -94,19 +95,19 @@
             label5.TabIndex = 5;
             label5.Text = "Correo";
             // 
-            // txtDirección
+            // txtDireccion
             // 
-            txtDirección.Location = new Point(44, 152);
-            txtDirección.Name = "txtDirección";
-            txtDirección.Size = new Size(125, 27);
-            txtDirección.TabIndex = 6;
+            txtDireccion.Location = new Point(44, 152);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(125, 27);
+            txtDireccion.TabIndex = 6;
             // 
-            // txtCédula
+            // txtCedula
             // 
-            txtCédula.Location = new Point(230, 80);
-            txtCédula.Name = "txtCédula";
-            txtCédula.Size = new Size(125, 27);
-            txtCédula.TabIndex = 7;
+            txtCedula.Location = new Point(230, 80);
+            txtCedula.Name = "txtCedula";
+            txtCedula.Size = new Size(125, 27);
+            txtCedula.TabIndex = 7;
             // 
             // txtTelefono
             // 
@@ -140,17 +141,25 @@
             txtCancelar.Text = "Cancelar";
             txtCancelar.UseVisualStyleBackColor = true;
             // 
+            // txtId
+            // 
+            txtId.Location = new Point(231, 205);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(125, 27);
+            txtId.TabIndex = 12;
+            // 
             // FrmSocioDetalle
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtId);
             Controls.Add(txtCancelar);
             Controls.Add(btnGuardar);
             Controls.Add(txtCorreo);
             Controls.Add(txtTelefono);
-            Controls.Add(txtCédula);
-            Controls.Add(txtDirección);
+            Controls.Add(txtCedula);
+            Controls.Add(txtDireccion);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -171,11 +180,12 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox txtDirección;
-        private TextBox txtCédula;
+        private TextBox txtDireccion;
+        private TextBox txtCedula;
         private TextBox txtTelefono;
         private TextBox txtCorreo;
         private Button btnGuardar;
         private Button txtCancelar;
+        private TextBox txtId;
     }
 }

@@ -68,9 +68,11 @@
             dgvSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSocios.Location = new Point(43, 136);
             dgvSocios.Name = "dgvSocios";
+            dgvSocios.ReadOnly = true;
             dgvSocios.RowHeadersWidth = 51;
             dgvSocios.Size = new Size(300, 188);
             dgvSocios.TabIndex = 3;
+            dgvSocios.CellContentClick += dgvSocios_CellContentClick;
             // 
             // btnAgregar
             // 
@@ -80,6 +82,7 @@
             btnAgregar.TabIndex = 4;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnEditar
             // 
