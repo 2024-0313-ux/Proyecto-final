@@ -17,5 +17,20 @@ namespace Proyecto_final.Formularios.Pagos
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarPago_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
