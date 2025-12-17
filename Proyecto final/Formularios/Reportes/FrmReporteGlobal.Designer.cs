@@ -55,7 +55,7 @@
             // 
             // btnExportar
             // 
-            btnExportar.Location = new Point(84, 331);
+            btnExportar.Location = new Point(78, 331);
             btnExportar.Name = "btnExportar";
             btnExportar.Size = new Size(118, 29);
             btnExportar.TabIndex = 2;

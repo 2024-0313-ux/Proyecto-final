@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             btmSocios = new Button();
+            label1 = new Label();
+            btnSocios = new Button();
             btnAportes = new Button();
             btnPrestamos = new Button();
             btnPagos = new Button();
@@ -43,9 +45,21 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btmSocios
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(63, 33);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Sistema Cooperativa";
+            // 
+            // btnSocios
             // 
             btmSocios.BackColor = Color.FromArgb(0, 43, 73);
             btmSocios.BackgroundImageLayout = ImageLayout.None;
@@ -67,6 +81,12 @@
             btmSocios.TextAlign = ContentAlignment.MiddleRight;
             btmSocios.UseVisualStyleBackColor = false;
             btmSocios.Click += btmSocios_Click_1;
+            btnSocios.Location = new Point(13, 11);
+            btnSocios.Name = "btnSocios";
+            btnSocios.Size = new Size(94, 29);
+            btnSocios.TabIndex = 1;
+            btnSocios.Text = "Socios";
+            btnSocios.UseVisualStyleBackColor = true;
             // 
             // btnAportes
             // 
@@ -83,6 +103,7 @@
             btnAportes.ImageAlign = ContentAlignment.MiddleLeft;
             btnAportes.Location = new Point(301, 83);
             btnAportes.Margin = new Padding(3, 2, 3, 2);
+            btnAportes.Location = new Point(113, 11);
             btnAportes.Name = "btnAportes";
             btnAportes.Size = new Size(240, 114);
             btnAportes.TabIndex = 2;
@@ -100,6 +121,7 @@
             btnPrestamos.ImageAlign = ContentAlignment.MiddleLeft;
             btnPrestamos.Location = new Point(573, 83);
             btnPrestamos.Margin = new Padding(3, 2, 3, 2);
+            btnPrestamos.Location = new Point(213, 11);
             btnPrestamos.Name = "btnPrestamos";
             btnPrestamos.Size = new Size(240, 113);
             btnPrestamos.TabIndex = 3;
@@ -120,6 +142,7 @@
             btnPagos.ImageAlign = ContentAlignment.MiddleLeft;
             btnPagos.Location = new Point(32, 228);
             btnPagos.Margin = new Padding(3, 2, 3, 2);
+            btnPagos.Location = new Point(313, 11);
             btnPagos.Name = "btnPagos";
             btnPagos.Size = new Size(240, 114);
             btnPagos.TabIndex = 4;
@@ -142,6 +165,7 @@
             btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
             btnReportes.Location = new Point(301, 228);
             btnReportes.Margin = new Padding(3, 2, 3, 2);
+            btnReportes.Location = new Point(417, 11);
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(240, 114);
             btnReportes.TabIndex = 5;
@@ -164,6 +188,7 @@
             btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
             btnUsuarios.Location = new Point(573, 228);
             btnUsuarios.Margin = new Padding(3, 2, 3, 2);
+            btnUsuarios.Location = new Point(517, 11);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(240, 114);
             btnUsuarios.TabIndex = 6;
@@ -186,6 +211,7 @@
             btnSalir.ImageAlign = ContentAlignment.MiddleLeft;
             btnSalir.Location = new Point(301, 370);
             btnSalir.Margin = new Padding(3, 2, 3, 2);
+            btnSalir.Location = new Point(617, 11);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(240, 77);
             btnSalir.TabIndex = 7;
@@ -238,6 +264,20 @@
             label1.Text = "      Sistema Cooperativa";
             label1.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnSocios);
+            panel1.Controls.Add(btnSalir);
+            panel1.Controls.Add(btnAportes);
+            panel1.Controls.Add(btnUsuarios);
+            panel1.Controls.Add(btnPrestamos);
+            panel1.Controls.Add(btnReportes);
+            panel1.Controls.Add(btnPagos);
+            panel1.Location = new Point(-1, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(798, 52);
+            panel1.TabIndex = 9;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -257,18 +297,26 @@
             Controls.Add(pictureBox3);
             ForeColor = Color.CornflowerBlue;
             Margin = new Padding(3, 2, 3, 2);
+            ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
+            Controls.Add(label1);
+            IsMdiContainer = true;
             Name = "FrmMenuPrincipal";
             Text = "FrmMenuPrincipal";
             Load += FrmMenuPrincipal_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Button btmSocios;
+
+        private Label label1;
+        private Button btnSocios;
         private Button btnAportes;
         private Button btnPrestamos;
         private Button btnPagos;
@@ -279,5 +327,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label1;
+        private Panel panel1;
     }
 }

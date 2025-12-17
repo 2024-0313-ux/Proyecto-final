@@ -94,31 +94,16 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.BackColor = Color.FromArgb(0, 43, 73);
-            btnIngresar.FlatAppearance.BorderColor = Color.Silver;
-            btnIngresar.FlatStyle = FlatStyle.Flat;
-            btnIngresar.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIngresar.ForeColor = Color.White;
-            btnIngresar.Location = new Point(230, 302);
-            btnIngresar.Margin = new Padding(3, 2, 3, 2);
+            btnIngresar.Location = new Point(70, 279);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(200, 40);
             btnIngresar.TabIndex = 4;
-            btnIngresar.Text = "ACCEDER";
-            btnIngresar.UseVisualStyleBackColor = false;
+            btnIngresar.Text = "Validar";
+            btnIngresar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.Crimson;
-            btnCancelar.FlatAppearance.BorderColor = Color.Crimson;
-            btnCancelar.FlatAppearance.BorderSize = 0;
-            btnCancelar.FlatAppearance.MouseDownBackColor = Color.Crimson;
-            btnCancelar.FlatAppearance.MouseOverBackColor = Color.Crimson;
-            btnCancelar.FlatStyle = FlatStyle.Flat;
-            btnCancelar.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(280, 361);
-            btnCancelar.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar.Location = new Point(261, 279);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(82, 26);
             btnCancelar.TabIndex = 5;

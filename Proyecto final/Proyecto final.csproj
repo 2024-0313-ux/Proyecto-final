@@ -10,6 +10,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="connection.secret.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="connection.secret.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 		<Compile Update="Properties\Resources.Designer.cs">
 			<DesignTime>true</DesignTime>
 			<AutoGen>true</AutoGen>
@@ -25,9 +35,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Clases\" />
 		<Folder Include="Data\" />
 		<Folder Include="Utilidades\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
 	</ItemGroup>
 
 </Project>
