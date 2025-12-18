@@ -29,6 +29,7 @@ namespace Proyecto_final.Formularios.Pagos
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             cboSocio = new ComboBox();
             label1 = new Label();
             cboPrestamo = new ComboBox();
@@ -39,6 +40,8 @@ namespace Proyecto_final.Formularios.Pagos
             label4 = new Label();
             btnGuardarPago = new Button();
             btnCancelar = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            txtMontoPendiente = new TextBox();
             SuspendLayout();
             // 
             // cboSocio
@@ -48,6 +51,7 @@ namespace Proyecto_final.Formularios.Pagos
             cboSocio.Name = "cboSocio";
             cboSocio.Size = new Size(151, 28);
             cboSocio.TabIndex = 0;
+            cboSocio.SelectedIndexChanged += cboSocio_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -115,6 +119,7 @@ namespace Proyecto_final.Formularios.Pagos
             btnGuardarPago.TabIndex = 8;
             btnGuardarPago.Text = "Pagar";
             btnGuardarPago.UseVisualStyleBackColor = true;
+            btnGuardarPago.Click += btnPagar_Click;
             // 
             // btnCancelar
             // 
@@ -124,12 +129,28 @@ namespace Proyecto_final.Formularios.Pagos
             btnCancelar.TabIndex = 9;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
+            // txtMontoPendiente
+            // 
+            txtMontoPendiente.Location = new Point(460, 155);
+            txtMontoPendiente.Name = "txtMontoPendiente";
+            txtMontoPendiente.ReadOnly = true;
+            txtMontoPendiente.Size = new Size(262, 27);
+            txtMontoPendiente.TabIndex = 10;
             // 
             // FrmRegistrarPago
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtMontoPendiente);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardarPago);
             Controls.Add(label4);
@@ -142,6 +163,7 @@ namespace Proyecto_final.Formularios.Pagos
             Controls.Add(cboSocio);
             Name = "FrmRegistrarPago";
             Text = "FrmRegistrarPago";
+            Load += FrmRegistrarPago_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +179,7 @@ namespace Proyecto_final.Formularios.Pagos
         private Label label4;
         private Button btnGuardarPago;
         private Button btnCancelar;
+        private ContextMenuStrip contextMenuStrip1;
+        private TextBox txtMontoPendiente;
     }
 }
